@@ -148,3 +148,6 @@ def delete(request,id):
         return redirect('/index/')
 
     return render(request,"delete.html",locals())
+
+def git_test(request):
+    return HttpResponse(request)
