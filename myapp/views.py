@@ -6,7 +6,7 @@ from django.utils import timezone
 from django.db.models import Sum
 
 def test(request):
-    return HttpResponse("Hello world!")
+    return HttpResponse("Hello world!!!!")
 def search_list(request):
     if 'cName' in request.GET:
         cName = request.GET['cName']
@@ -148,6 +148,3 @@ def delete(request,id):
         return redirect('/index/')
 
     return render(request,"delete.html",locals())
-
-def git_test(request):
-    return HttpResponse(request)
